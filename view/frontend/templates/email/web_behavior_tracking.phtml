@@ -1,0 +1,15 @@
+<?php
+/** @var \Dotdigitalgroup\Email\Block\WebBehavior $block */
+// @codingStandardsIgnoreFile
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Dotdigitalgroup_Email/js/webBehaviorTracking": {
+                "id": "<?= $block->getProfileId(); ?>",
+                "subdomain": "<?= $block->getSubdomain(); ?>",
+                "region": "<?= $block->getRegionPrefix(); ?>"
+            }
+        }
+    }
+</script>
